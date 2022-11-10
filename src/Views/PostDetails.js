@@ -33,7 +33,7 @@ const PostDetails = ({ postDetails }) => {
             postDetails.owner.lastName +
             " , " +
             "Posted At:" +
-            moment(postDetails.publishDate).format("LLL")}
+            moment(postDetails.publishDate).format("ll")}
         </div>
         <div className="mt-4 fs-4">
           Likes - <i class="fa-solid fa-heart text-danger"></i> {postDetails.likes}

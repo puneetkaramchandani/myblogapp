@@ -24,7 +24,7 @@ const PostsList = ({ data }) => {
                   {item.tags.map(tag=>(<span className="badge bg-primary me-1">{tag}</span>))}
                 </div>
                 <p>{item.text}</p>
-                <p>Posted At : {moment(item.publishDate).format('LLL')}</p>
+                <p>Posted At : {moment(item.publishDate).format('ll')}</p>
                 <div className="text-end">
                 <a href={`/post/${item.id}`} className="">Read More</a>
                 </div>
