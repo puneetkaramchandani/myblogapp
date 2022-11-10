@@ -1,9 +1,10 @@
 import * as React from "react";
+import AboutMe from "../Views/AboutMe";
 
 const About = () => {
     return(
-        <main className="page d-flex justify-content-center align-items-center">
-            <h1>About Page</h1>
+        <main className="page p-2 p-md-3 p-lg-5">
+            <AboutMe/>
         </main>
     );
 };
