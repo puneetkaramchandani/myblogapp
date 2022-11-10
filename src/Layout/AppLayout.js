@@ -1,11 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Outlet } from "react-router-dom";
+import BottomFooter from "./BottomFooter";
+import TopNav from "./TopNav";
 
 const AppLayout = () => {
-    return(<div>
-        Application Layout
-        <Outlet/>
-    </div>);
+  return (
+    <Fragment>
+      <TopNav />
+      <Outlet />
+      <BottomFooter/>
+    </Fragment>
+  );
 };
 
 export default AppLayout;

@@ -2,7 +2,7 @@ import * as React from "react";
 
 const About = () => {
     return(
-        <main>
+        <main className="page">
             <h1>About Page</h1>
         </main>
     );
