@@ -6,7 +6,7 @@ const TopNav = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-warning">
       <div className="container-fluid ps-lg-5">
         <a className="navbar-brand" href="/">
-          <img height={35} alt="Blog Studio" src={logo}/>
+          <img height={52} alt="Blog Studio" src={logo}/>
         </a>
         <button
           className="navbar-toggler"
