@@ -1,11 +1,14 @@
-import * as React from "react";
+import React, { Fragment } from "react";
+import PageNotFound from "../Views/PageNotFound";
 
 const Error = () => {
-    return(
-        <main className="page">
-            <h1>Error Page</h1>
-        </main>
-    );
+  return (
+    <Fragment>
+      <main className="page d-flex justify-content-center align-items-center">
+        <PageNotFound />
+      </main>
+    </Fragment>
+  );
 };
 
 export default Error;
