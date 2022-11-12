@@ -11,8 +11,8 @@ const PostDetails = ({ postDetails }) => {
       </div>
       <div className="col-md-6">
         <div className="my-2">
-          {postDetails.tags.map((tag) => (
-            <span className="badge fs-5 bg-primary me-1">{tag}</span>
+          {postDetails.tags.map((tag,index) => (
+            <span key={`${postDetails.id}_tag_${index}`} className="badge fs-5 bg-primary me-1">{tag}</span>
           ))}
         </div>
         <div className="mt-4 fs-5">
@@ -36,7 +36,7 @@ const PostDetails = ({ postDetails }) => {
             moment(postDetails.publishDate).format("ll")}
         </div>
         <div className="mt-4 fs-4">
-          Likes - <i class="fa-solid fa-heart text-danger"></i> {postDetails.likes}
+          Likes - <i className="fa-solid fa-heart text-danger"></i> {postDetails.likes}
         </div>
         <div className="mt-4">
           <textarea

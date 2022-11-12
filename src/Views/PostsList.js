@@ -18,10 +18,10 @@ const PostsList = ({ data }) => {
               <img height={200} className="card-img border rounded-top" src={item.image} />
               <div className="card-body">
                 <div className="text-end">
-                  <i class="fa-solid fa-heart text-danger"></i> {item.likes}
+                  <i className="fa-solid fa-heart text-danger"></i> {item.likes}
                 </div>
                 <div className="my-2">
-                  {item.tags.map(tag=>(<span className="badge bg-primary me-1">{tag}</span>))}
+                  {item.tags.map((tag,index)=>(<span key={`${item.id}_tag_${index}`} className="badge bg-primary me-1">{tag}</span>))}
                 </div>
                 <p>{item.text}</p>
                 <p>Posted At : {moment(item.publishDate).format('ll')}</p>
