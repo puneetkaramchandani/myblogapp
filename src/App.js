@@ -5,7 +5,6 @@ import AppLayout from "./Layout/AppLayout";
 import './Style.css';
 
 const Home = lazy(() => import("./Pages/Home"));
-const About = lazy(() => import("./Pages/About"));
 const Post  = lazy(() => import("./Pages/Post"));
 const Error = lazy(() => import("./Pages/Error"));
 
@@ -14,7 +13,6 @@ const App = () =>{
         <Routes>
             <Route element={<AppLayout/>}>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/about" element={<About/>}/>
                 <Route path="/post/:post_id" element={<Post/>}/>
                 <Route path="*" element={<Error/>}/>
             </Route>
