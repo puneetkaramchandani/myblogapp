@@ -26,11 +26,6 @@ const TopNav = () => {
                 Home
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link active" href="/about">
-                About
-              </a>
-            </li>
           </ul>
         </div>
       </div>
