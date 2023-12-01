@@ -33,13 +33,6 @@ const HomeHero = () => {
             >
               Get Started
             </a>
-            <a
-              href="/about"
-              type="button"
-              className="btn btn-outline-secondary btn-lg px-4"
-            >
-              Read About Me
-            </a>
           </div>
         </div>
       </div>
